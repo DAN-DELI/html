@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+
+  <h2>Formulario de Registro</h2>
+
+  <form action="/registro" method="post">
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"  title="Solo letras y espacios">
+    <br>
+    
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios">
+    <br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos">
+    <br>
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required>
+    <br>
+
+    <label for="gustos">Gustos:</label>
+    <input type="text" id="gustos" name="gustos" required>
+    <br>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+      <option value="">Seleccione...</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</body>
+</html>
