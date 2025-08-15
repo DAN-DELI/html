@@ -10,26 +10,33 @@
 
   <form action="/registro" method="post">
     
+  <fieldset>
+    <table>
+    <legend>Información Personal</legend>
+
+    <tbody>
+    <tr>
+      <td>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"  title="Solo letras y espacios">
-    <br>
-    
+      </td>
+      </tr>
+    <tr>
+      <td>
     <label for="apellidos">Apellidos:</label>
     <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios">
-    <br>
+      </td>
+      </tr>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos">
-    <br>
-
-    <label for="direccion">Dirección:</label>
-    <input type="text" id="direccion" name="direccion" required>
-    <br>
-
+    <tr>
+      <td>
     <label for="gustos">Gustos:</label>
     <input type="text" id="gustos" name="gustos" required>
-    <br>
+      </td>
+      </tr> 
 
+    <tr>
+      <td>
     <label for="genero">Género:</label>
     <select id="genero" name="genero" required>
       <option value="">Seleccione...</option>
@@ -37,9 +44,39 @@
       <option value="femenino">Femenino</option>
       <option value="otro">Otro</option>
     </select>
+      </td>
+    </tr>
+    
+  
+  </table>
+</fieldset>
 
-    <br><br>
+  
+  <fieldset>
+    
+    <legend>Información de Contacto</legend>
+    <table>
+   <tbody>
+   <tr>
+    <td>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos">
+    </td>
+   </tr> 
+  
+   <tr>
+      <td>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      <td>
+   </tr>
+   </table>
+   </tbody>
+  </fieldset>
+   <br><br>
     <button type="submit">Enviar</button>
+
+  
 
   </form>
 </body>
