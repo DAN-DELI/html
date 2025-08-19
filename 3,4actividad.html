@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Jhon.">
+  <meta name="keywords" content="HTML, formularios, tablas, accesibilidad, Visual Studio">
+  <meta name="author" content="Jhon">
+
+    <title>Actividad 3.4</title>
+</head>
+<body>
+
+  <header>
+    <h1 id="inicio">Portafolio de Jhon</h1>
+    <nav>
+      <ul>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#productos">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="contacto">
+      <h2>Formulario de Contacto</h2>
+      <form action="#">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios"><br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <br>
+        <section id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>Mi primer proyecto</h3>
+        <p>Un poco de lo que se hacer</p>
+        <img src="https://th.bing.com/th/id/R.f13cf42e96f250fe5025469f53cca2da?rik=ulgTaPVi8v8CQQ&riu=http%3a%2f%2fbehstant.com%2fblog%2fwp-content%2fuploads%2f2013%2f06%2f010.png&ehk=YYp0zJvwbQI18%2fpU48%2f0k9uDuAFVxF0%2b%2b29u621f%2b0g%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Tabla cono informacion de contacto" height="200" width="300">
+      </article>
+      <aside>
+        <h4>Sobre mí</h4>
+        <p>Soy Jhon, apasionado por el desarrollo web y la accesibilidad.</p>
+      </aside>
+    </section>
+    <br>
+
+        <section id="multimedia">
+      <h2>Multimedia</h2>
+      <h3>Videos</h3>
+      <video width="320" height="240" controls>
+        <source src="videoprog.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="audiojazz.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
+    </section>
+<br> 
+    <section id="productos">
+      <h2>Productos</h2>
+    <form action="#">
+      <table border="1">
+        <thead>
+            <tr>
+                <th>productos</th>
+                <th>precio</th>
+                <th>cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>$10</td>
+                <td><input type="number" min="0" max="10"></td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>$20</td>
+                <td><input type="number" min="0" max="10"></td>  
+            </tr>
+            <tr>   
+                <td>Producto 3</td>
+                <td>$30</td>
+                <td><input type="number" min="0" max="10"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Agrega tus productos al carrito</td>
+            </tr>
+        </tfoot>
+      </table>
+      <button type="submit">Agregar al carrito</button>
+    </form>
+        </tbody>
+      </table>
+    </section>
+<br>
+<nav>
+    <ul>
+        <li>
+          <a href="index.html">Vuelve al inicio</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

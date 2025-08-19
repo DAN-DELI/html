@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actiividad 3.3</title>
+</head>
+<body>
+<h1>ACTIVIDAD</h1>
+<fieldset>
+    <legend>Punto 4</legend>
+<p>Diseña una sección de contacto usando y valida el formulario para que nunca sea
+enviado con datos vacíos, si requerimos número se envie solo números, campos
+máximos y mínimos etc:</p>
+
+  <main>
+    <section>
+      <h1>Titulo del contacto</h1>
+      <form action=" ">
+        <div>
+          <label for="nombre">Nombres: </label>
+          <input type="text" pattern="[a-zA-Z\s]+" title="SOLO LETRAS" id="nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Apellidos: </label>
+          <input type="text" pattern="[a-zA-Z\s]+" title="SOLO LETRAS" id="apellido" required>
+        </div>
+        <div>
+          <label for="edad">Edad: </label>
+          <input type="number" step="1" max="99" required>
+        </div>
+        <div>
+          <label for="ciudad">Ciudad: </label>
+          <select name="ciudad" id="ciudad" required>
+          <option value="1">Bucaramanga</option>
+          <option value="2">Giron</option>
+          </select>
+        </div>
+        <button>Guardar</button>
+      </form>
+    </section>
+  </main>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Punto 5</legend>
+<p>Agrega imágenes a una página y usa "alt" para descripciones accesibles.</p>
+<img src="https://th.bing.com/th/id/OIP.X04Jw7WrC0JJJkc5DWJs9AHaE8?w=287&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Gato en un campo" width="300" height="200">
+</fieldset>
+<fieldset>
+    <legend>Punto 6</legend>
+    <p>Crea una tabla con "table", "thead", "tbody" y "tfoot" para simular que estamos listando todos los datos del formulario de contacto.</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>28</td>
+                <td>Bucaramanga</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Gomez</td>
+                <td>34</td>
+                <td>Giron</td>
+            </tr>
+            
+            <tfoot>
+                <tr>
+                    <td colspan="4">Fin de la tabla</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</fieldset> 
+<fieldset>
+    <legend>Punto 7 y 8</legend>
+<p>Diseña un formulario con "input", "label" y "button" donde se puedan ingresar los
+datos básicos de una persona (nombre, apellidos, teléfono, dirección, gustos,
+genero etc), este formulario simularíaun formulario de registro “El formulario debe
+estar validado para no enviar campos vacíos ni campos que no correspondan al
+tipo de dato solicitado”</p>
+
+  <h2>Formulario de Registro</h2>
+
+  <form action="/registro" method="post">
+    
+  <fieldset>
+    <table>
+    <legend>Información Personal</legend>
+
+    <tbody>
+    <tr>
+      <td>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+"  title="Solo letras y espacios">
+      </td>
+      </tr>
+    <tr>
+      <td>
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios">
+      </td>
+      </tr>
+
+    <tr>
+      <td>
+    <label for="gustos">Gustos:</label>
+    <input type="text" id="gustos" name="gustos" required>
+      </td>
+      </tr> 
+
+    <tr>
+      <td>
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero" required>
+      <option value="">Seleccione...</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+      </td>
+    </tr>
+    
+  
+  </table>
+</fieldset>
+
+  
+  <fieldset>
+    
+    <legend>Información de Contacto</legend>
+    <table>
+   <tbody>
+   <tr>
+    <td>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" title="Debe tener 10 dígitos numéricos">
+    </td>
+   </tr> 
+  
+   <tr>
+      <td>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+      <td>
+   </tr>
+   </table>
+   </tbody>
+  </fieldset>
+   <br><br>
+    <button type="submit">Enviar</button>
+ </form>
+</fieldset>
+<br>
+
+    <nav> 
+    <ul>
+        <li>
+          <a href="index.html">Vuelve al inicio</a>
+        </li>
+      </ul>
+    </nav>
+</body>
+</html>
